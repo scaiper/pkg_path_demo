@@ -1,0 +1,8 @@
+load("@rules_go//go:def.bzl", "go_test")
+
+go_test(
+    name = "b_test",
+    srcs = ["b_test.go"],
+    importpath = "github.com/scaiper/pkg_path_demo/internal/b",
+    deps = ["//internal/foo"],
+)
